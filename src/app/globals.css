@@ -1,122 +1,33 @@
 @import "tailwindcss";
-/* =========================
-   CSS VARIABLES
-========================= */
-:root {
-  --primary: #1392ec;      /* Soft Blue */
-  --secondary: #48bb78;    /* Teal */
-  --accent: #22c55e;      /* Light Green */
-  --text-dark: #1f2937;
-  --text-muted: #6b7280;
-  --bg-light: #ffffff;
-  --bg-soft: #f9fafb;
-  --border-light: #e5e7eb;
+
+@theme {
+  /* আপনার দেওয়া কালারগুলো এখানে থিম হিসেবে অ্যাড করুন */
+  --color-primary: #1392ec;
+  --color-secondary: #48bb78;
+  --color-accent: #22c55e;
+  --color-text-dark: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-bg-soft: #f9fafb;
 }
 
-/* =========================
-   GLOBAL RESET
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer components {
+  /* বাটন এবং কার্ডের জন্য কাস্টম ক্লাস */
+  .btn-primary {
+    @apply bg-primary text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-all;
+  }
+
+  .btn-outline {
+    @apply border border-white/30 bg-white/20 backdrop-blur-md text-white px-5 py-2 rounded-lg font-semibold hover:bg-white/30 transition-all;
+  }
+
+  .card-style {
+    @apply bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform duration-300;
+  }
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.6;
-}
-
-/* =========================
-   CONTAINER
-========================= */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* =========================
-   TEXT UTILITIES
-========================= */
-.text-primary {
-  color: var(--primary);
-}
-
-.text-secondary {
-  color: var(--secondary);
-}
-
-.text-accent {
-  color: var(--accent);
-}
-
-.text-muted {
-  color: var(--text-muted);
-}
-
-/* =========================
-   BACKGROUND UTILITIES
-========================= */
-.bg-primary {
-  background-color: var(--primary);
-}
-
-.bg-secondary {
-  background-color: var(--secondary);
-}
-
-.bg-soft {
-  background-color: var(--bg-soft);
-}
-
-/* =========================
-   BUTTONS
-========================= */
-.btn {
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background-color: var(--primary);
-  color: #fff;
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
-}
-
-.btn-secondary {
-  background-color: var(--secondary);
-  color: #fff;
-}
-
-/* =========================
-   CARD STYLE
-========================= */
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-}
-
-/* =========================
-   LINKS
-========================= */
-a {
-  text-decoration: none;
-  color: inherit;
+/* গ্লোবাল রিসেট এবং বডি */
+@layer base {
+  body {
+    @apply font-sans text-text-dark bg-white antialiased;
+  }
 }

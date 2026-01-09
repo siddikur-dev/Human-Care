@@ -1,10 +1,14 @@
-import Hero from '@/Components/Shared/Hero';
-import React from 'react';
+import FeaturesHotel from "@/Components/FeaturesHotel";
+import Hero from "@/Components/Shared/Hero";
+import WhyChooseUs from "@/Components/WhyChooseUs";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Hero/>
+      <Hero />
+      <WhyChooseUs />
+      <FeaturesHotel/>
     </div>
   );
 };

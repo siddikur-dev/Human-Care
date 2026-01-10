@@ -68,7 +68,7 @@ const SafetySection = () => {
               }}
               // Hover effect remains smooth
               whileHover={{ y: -10 }}
-              className="bg-white p-8 rounded-[2.5rem] border border-primary/5 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 flex flex-col items-center text-center group cursor-default"
+              className="bg-white p-8 rounded-2xl  border-l-5 border-primary/40 shadow-sm hover:shadow-xl hover:border-primary/80 transition-all duration-300 flex flex-col items-center text-center group cursor-default"
             >
               {/* Animated Icon Container */}
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary text-primary group-hover:text-white transition-colors duration-300">

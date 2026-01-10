@@ -1,32 +1,62 @@
 import React from "react";
 
 const FeaturesHotel = () => {
-  const hotels = [
-    {
-      name: "The Urban Loft",
-      location: "Downtown New York",
-      price: 850,
-      rating: 4.8,
-      image:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400",
-    },
-    {
-      name: "Student Plaza",
-      location: "Central London",
-      price: 720,
-      rating: 4.5,
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400",
-    },
-    {
-      name: "Metro Suites",
-      location: "San Francisco",
-      price: 900,
-      rating: 4.7,
-      image:
-        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=400",
-    },
-  ];
+  const hotels =[
+  {
+    id: "1",
+    name: "Grand Plaza Hotel",
+    location: "Mumbai, Maharashtra",
+    dailyPrice: 1500,
+    monthlyPrice: 35000,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1723465308831-29da05e011f3?w=800",
+  },
+  {
+    id: "2",
+    name: "Boutique Residency",
+    location: "Bangalore, Karnataka",
+    dailyPrice: 1200,
+    monthlyPrice: 28000,
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1649731000184-7ced04998f44?w=800",
+  },
+  {
+    id: "3",
+    name: "Sunset Resort",
+    location: "Goa",
+    dailyPrice: 2000,
+    monthlyPrice: 45000,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800",
+  },
+  {
+    id: "4",
+    name: "City Apartments",
+    location: "Delhi",
+    dailyPrice: 1800,
+    monthlyPrice: 40000,
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1633294157464-2a2ace9e5412?w=800",
+  },
+  {
+    id: "5",
+    name: "Business Inn",
+    location: "Pune, Maharashtra",
+    dailyPrice: 1400,
+    monthlyPrice: 32000,
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1608022099316-02dbaebb4d7e?w=800",
+  },
+  {
+    id: "6",
+    name: "Cozy Stays",
+    location: "Hyderabad, Telangana",
+    dailyPrice: 1100,
+    monthlyPrice: 26000,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1647792855184-af42f1720b91?w=800",
+  },
+]
 
   return (
     <section className="pb-20 px-10">

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "../ui/button"; 
-import { Menu, X, Search, ArrowUpRight } from "lucide-react";
+// Next.js Link ব্যবহার করা হয়েছে (Saved Preferences অনুযায়ী)
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -9,65 +10,67 @@ const Navbar = () => {
 
   // Nav links configuration
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "All Hotels", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "All Hotels", href: "/all-hotels" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     /* absolute positioning makes the navbar float over the hero content */
-    <header className="absolute top-0 left-0 w-full z-50 px-4 md:px-10 py-4 bg-transparent">
-      {/* Glassmorphism container based on industry standards */}
-      <nav className="mx-auto container backdrop-blur-xl bg-white/10 border border-white/20 rounded-4xl shadow-2xl overflow-hidden text-white/90">
-        <div className="flex items-center justify-between px-8 py-3">
-          
-          {/* Brand Logo with primary and secondary color concept */}
-          <div className="text-2xl font-bold  tracking-tight">
-            Temp <span className="text-secondary/70">House</span>
-          </div>
+    <header className="absolute top-0 left-0 w-full z-50 px-4 md:px-10 py-4">
+      {/* Container: Black background and White text applied for both mobile & desktop */}
+      <nav className="mx-auto container  backdrop-blur-md  border  border-white/10 rounded-4xl shadow-2xl overflow-hidden transition-all duration-300">
+        <div className="flex items-center  justify-between px-8 py-4 ">
+          {/* Brand Logo */}
+          <Link href="/" className="text-2xl font-black tracking-tighter text-black/60">
+            TEMP <span className="text-primary">HOUSE</span>
+          </Link>
 
           {/* Desktop Navigation links */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-10 text-white">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold  hover:text-secondary transition-all"
+                className="text-sm font-bold uppercase tracking-widest hover:text-primary-light transition-all opacity-80 hover:opacity-100"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 
-
           {/* Mobile menu trigger */}
-          <div className="lg:hidden">
-            <button 
-              onClick={() => setIsOpen(!isOpen)} 
-              className="text-white cursor-pointer"
+          <div className="lg:hidden ">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className=" cursor-pointer focus:outline-none"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile menu dropdown with blur effect */}
-        <div className={cn(
-          "lg:hidden overflow-hidden transition-all duration-300 bg-black/60 backdrop-blur-3xl rounded-b-4xl",
-          isOpen ? "max-h-96 border-t border-white/10" : "max-h-0"
-        )}>
-          <div className="flex flex-col p-8 gap-5">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-white/90 hover:text-secondary"
-              >
-                {link.name}
-              </a>
-            ))}
+        {/* Mobile menu dropdown */}
+        <div className="">
+          <div
+            className={cn(
+              "lg:hidden overflow-hidden transition-all duration-500 ease-in-out bg-black",
+              isOpen ? "max-h-96 border-t border-white/5" : "max-h-0"
+            )}
+          >
+            <div className="flex flex-col p-8 gap-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-xl font-bold text-white/90 hover:text-primary-light transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </nav>

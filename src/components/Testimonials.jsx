@@ -98,8 +98,8 @@ const Testimonials = () => {
                   ))}
                 </div>
 
-                <p className="text-text-muted text-base leading-relaxed mb-8 italic flex-grow">
-                  "{review.text}"
+                <p className="text-text-muted text-base leading-relaxed mb-8 italic grow">
+                  `{review.text}`
                 </p>
 
                 {/* User Info */}

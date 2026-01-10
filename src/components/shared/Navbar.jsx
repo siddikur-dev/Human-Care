@@ -19,12 +19,12 @@ const Navbar = () => {
     /* absolute positioning makes the navbar float over the hero content */
     <header className="absolute top-0 left-0 w-full z-50 px-4 md:px-10 py-4 bg-transparent">
       {/* Glassmorphism container based on industry standards */}
-      <nav className="mx-auto container backdrop-blur-xl bg-white/10 border border-white/20 rounded-4xl shadow-2xl overflow-hidden">
+      <nav className="mx-auto container backdrop-blur-xl bg-white/10 border border-white/20 rounded-4xl shadow-2xl overflow-hidden text-white/90">
         <div className="flex items-center justify-between px-8 py-3">
           
           {/* Brand Logo with primary and secondary color concept */}
-          <div className="text-2xl font-bold text-primary tracking-tight">
-            Temp <span className="text-secondary">spa</span>
+          <div className="text-2xl font-bold  tracking-tight">
+            Temp <span className="text-secondary/70">House</span>
           </div>
 
           {/* Desktop Navigation links */}
@@ -33,7 +33,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-white/90 hover:text-secondary transition-all"
+                className="text-sm font-semibold  hover:text-secondary transition-all"
               >
                 {link.name}
               </a>

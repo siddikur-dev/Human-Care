@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "name": "Grand Plaza Hotel",
+    "location": "Mumbai, Maharashtra",
+    "dailyPrice": 1500,
+    "monthlyPrice": 35000,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1723465308831-29da05e011f3?w=800"
+  },
+  {
+    "id": "2",
+    "name": "Boutique Residency",
+    "location": "Bangalore, Karnataka",
+    "dailyPrice": 1200,
+    "monthlyPrice": 28000,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1649731000184-7ced04998f44?w=800"
+  },
+  {
+    "id": "3",
+    "name": "Sunset Resort",
+    "location": "Goa",
+    "dailyPrice": 2000,
+    "monthlyPrice": 45000,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800"
+  },
+  {
+    "id": "4",
+    "name": "City Apartments",
+    "location": "Delhi",
+    "dailyPrice": 1800,
+    "monthlyPrice": 40000,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1633294157464-2a2ace9e5412?w=800"
+  },
+  {
+    "id": "5",
+    "name": "Business Inn",
+    "location": "Pune, Maharashtra",
+    "dailyPrice": 1400,
+    "monthlyPrice": 32000,
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1608022099316-02dbaebb4d7e?w=800"
+  },
+  {
+    "id": "6",
+    "name": "Cozy Stays",
+    "location": "Hyderabad, Telangana",
+    "dailyPrice": 1100,
+    "monthlyPrice": 26000,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1647792855184-af42f1720b91?w=800"
+  },
+  {
+    "id": "7",
+    "name": "Ocean View Suites",
+    "location": "Chennai, Tamil Nadu",
+    "dailyPrice": 1700,
+    "monthlyPrice": 38000,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+  },
+  {
+    "id": "8",
+    "name": "Mountain Peak Lodge",
+    "location": "Manali, HP",
+    "dailyPrice": 2200,
+    "monthlyPrice": 50000,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+  },
+  {
+    "id": "9",
+    "name": "The Heritage Inn",
+    "location": "Jaipur, Rajasthan",
+    "dailyPrice": 1600,
+    "monthlyPrice": 34000,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+  },
+  {
+    "id": "10",
+    "name": "Urban Elite Hotel",
+    "location": "Kolkata, WB",
+    "dailyPrice": 1300,
+    "monthlyPrice": 29000,
+    "rating": 4.1,
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+  },
+  {
+    "id": "11",
+    "name": "Green Valley Resort",
+    "location": "Kerala",
+    "dailyPrice": 1900,
+    "monthlyPrice": 42000,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800"
+  },
+  {
+    "id": "12",
+    "name": "Royal Palace Stay",
+    "location": "Udaipur, Rajasthan",
+    "dailyPrice": 2500,
+    "monthlyPrice": 55000,
+    "rating": 5.0,
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800"
+  }
+]

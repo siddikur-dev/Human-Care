@@ -9,9 +9,9 @@ const page = () => {
   return (
     <div>
       <Hero />
-      {/* <WhyChooseUs /> */}
       <FeaturesHotel/>
       <SafetySection/>
+      <WhyChooseUs />
       <Testimonials/>
     </div>
   );

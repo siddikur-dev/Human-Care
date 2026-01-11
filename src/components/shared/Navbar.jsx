@@ -20,7 +20,7 @@ const Navbar = () => {
     /* absolute positioning makes the navbar float over the hero content */
     <header className="absolute top-0 left-0 w-full z-50 px-4 md:px-10 py-4">
       {/* Container: Black background and White text applied for both mobile & desktop */}
-      <nav className="mx-auto container  backdrop-blur-md  border  border-white/10 rounded-4xl shadow-2xl overflow-hidden transition-all duration-300">
+      <nav className="mx-auto container  backdrop-blur-md  border bg-black  border-white/10 rounded-4xl shadow-2xl overflow-hidden transition-all duration-300">
         <div className="flex items-center  justify-between px-8 py-4 ">
           {/* Brand Logo */}
           <Link href="/" className="text-2xl font-black tracking-tighter text-black/60">
